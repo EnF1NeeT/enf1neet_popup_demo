@@ -243,3 +243,15 @@ li a:focus{
 
 
 ul { list-style: none; }
+
+label img:hover {
+    box-shadow: 0 0 0 2.5px #b3b3b3, 0 0 0 5px #5d5933;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+label img:focus{
+    background-color: #B3B3B3;
+    border-radius: 10px;
+    box-shadow: 0 0 0 2.5px #b3b3b3, 0 0 0 5px #5d5933;
+}
