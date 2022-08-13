@@ -33,7 +33,6 @@ h1:hover{
     font-size: 40px;
     color: #E6DC1B;
 
-    
     text-shadow: 3px 0px 7px #5D5933, 
         -3px 0px 7px #5D5933, 
         0px 4px 7px #5D5933;
@@ -243,6 +242,4 @@ li a:focus{
 }
 
 
-ul {
-    list-style: none;
-}
+ul { list-style: none; }
