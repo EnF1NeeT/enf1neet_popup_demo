@@ -12,10 +12,6 @@ body{
 
 nav{
     width: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
     background-color: #E6DC1B;
     height: 80px;
     align-items: center;
@@ -169,7 +165,6 @@ button img{
 
 #menu-check:checked ~ .main-menu, #menu-check-more:checked ~ .main-menu-more{
     display: block;
-    transition: 4s;
 }
 
 .popup-grid {
@@ -241,17 +236,13 @@ li a:focus{
     margin-left: 149px;
 }
 
-
 ul { list-style: none; }
 
-label img:hover {
-    box-shadow: 0 0 0 2.5px #b3b3b3, 0 0 0 5px #5d5933;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-label img:focus{
-    background-color: #B3B3B3;
-    border-radius: 10px;
-    box-shadow: 0 0 0 2.5px #b3b3b3, 0 0 0 5px #5d5933;
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 14px;
 }
