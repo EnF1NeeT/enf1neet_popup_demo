@@ -34,10 +34,6 @@ h1:hover{
         0px 4px 7px #5D5933;
 }
 
-nav:hover{
-    box-shadow: 0 0 0 4px #B3B3B3, 0 0 0 10px #5D5933;
-}
-
 a{
     text-decoration: none;
 }
@@ -125,11 +121,11 @@ button img{
 }
 
 #menu-check, #menu-check-more{
-    display: none;
-
+    appearance: none;
 }
 
 .main-menu{
+    transition: 0.5s;
     display: none;
     position: absolute;
     margin-top: 20px;
@@ -156,13 +152,6 @@ button img{
     background: #E6DC1B;
 }
 
-
-.main-menu img{
-    height: 50px;
-    width: auto;
-    cursor: pointer;
-}
-
 #menu-check:checked ~ .main-menu, #menu-check-more:checked ~ .main-menu-more{
     display: block;
 }
@@ -175,11 +164,6 @@ button img{
     align-items: center;
 }
 
-.main-menu-more{
-    display: none;
-}
-
-
 .popup-grid-more {
     display: grid;
     grid-template: repeat(2, 115px) / repeat(3, 115px);
@@ -188,6 +172,9 @@ button img{
     align-items: center;
 }
 
+.main-menu-more{
+    display: none;
+}
 
 .item-name{
     word-wrap: break-word;
@@ -203,40 +190,37 @@ button img{
     width: 100px;
 }
 
+
+li a:focus, li a:hover{
+    background-color: #E6DC1B;
+    border-radius: 10px;
+    box-shadow: 0 0 0 2.5px #b3b3b3, 0 0 0 5px #5d5933;
+}
+
+
+ul {
+    list-style: none;
+}
+
+.input-check:focus + .check, .input-check:focus + .check-more, .input-check:hover + .check, .input-check:hover + .check-more {
+    background-color: #E6DC1B;
+    border-radius: 10px;
+    box-shadow: 0 0 0 2.5px #b3b3b3, 0 0 0 5px #5d5933;
+}
+
+.check, .check-more{
+    font-size: 45px;
+}
+
+#menu-check-more:checked ~ .check-more{
+    display: none;
+}
+
 .main-menu img{
     height: 50px;
     width: auto;
     cursor: pointer;
 }
-
-.label-more .img{
-    box-shadow: 0 0 0 1px #b3b3b3, 0 0 0 5px #5d5933;
-    margin: 25px;
-    padding: 7px 80px;
-    border-radius: 10px;
-}
-
-#menu-check-more:checked ~ .label-more{
-    display: none;
-}
-
-li a:hover {
-    box-shadow: 0 0 0 2.5px #b3b3b3, 0 0 0 5px #5d5933;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-li a:focus{
-    background-color: #B3B3B3;
-    border-radius: 10px;
-    box-shadow: 0 0 0 2.5px #b3b3b3, 0 0 0 5px #5d5933;
-}
-
-.main-menu label img{
-    margin-left: 149px;
-}
-
-ul { list-style: none; }
 
 nav ul{
     display: flex;
@@ -244,5 +228,13 @@ nav ul{
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    padding: 14px;
+    padding-top: 10px;
+}
+
+.greeting{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 150px;
+    align-items: center;
 }
