@@ -1,35 +1,35 @@
 
-*{
+* {
     font-family: 'Alumni Sans', sans-serif;
     font-weight: 600;
     margin: 0;
     padding: 0;
     text-decoration: none;
 }
-body{
+body {
     background-image: url('https://i.im.ge/2022/08/03/FE91Z6.5624543.jpg');
 }
 
-nav{
-    width: auto;
-    background-color: #E6DC1B;
-    height: 80px;
-    margin: 10px;
-    border-radius: 10px;
-}
-
-.nav-list{
+.nav-list {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
+    align-items: flex-start;
+    background-color: #E6DC1B;
+    border-radius: 10px;
+    margin: 10px;
+    height: 60px;
 }
 
-.logo{
+.nav-item {
+    width: 100px;
+}
+
+.logo {
     font-size: 30px;
 }
 
-.logo:hover{
+.logo:hover {
     transition: 0.5s;
     font-size: 40px;
     color: #E6DC1B;
@@ -39,7 +39,7 @@ nav{
         0px 4px 7px #5D5933;
 }
 
-.greeting{
+.greeting {
     font-size: 30px;
     display: flex;
     flex-direction: row;
@@ -51,6 +51,7 @@ nav{
 }
 
 .main-menu{
+    position:absolute;
     display: none;
     margin-top: 40px;
     background-color: #F4F4EF;
@@ -86,7 +87,6 @@ nav{
     display: grid;
     grid-template: repeat(1, 130px) / repeat(3, 130px);
     justify-items: center;
-    align-items: center;
 }
 
 .main-menu-more{
@@ -127,7 +127,7 @@ nav{
 }
 
 .check, .check-more{
-    font-size: 30px;
+    font-size: 45px;
 }
 
 .check-more{
